@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import CommonButton from './components/CommonButton';
 
 export default function Home() {
   return (
@@ -16,18 +17,8 @@ export default function Home() {
           </p>
         </section>
         <section className="flex flex-col items-center gap-6">
-          <a
-            className="border border-solid border-white rounded-full px-6 py-3 text-lg hover:bg-white hover:text-black transition-all"
-            href="/about"
-          >
-            More About Me
-          </a>
-          <a
-            className="border border-solid border-white rounded-full px-6 py-3 text-lg hover:bg-white hover:text-black transition-all"
-            href="/projects"
-          >
-            View My Projects
-          </a>
+          <CommonButton message="More about me" href="/about" />
+          <CommonButton message="My Blog" href="/blog" />
         </section>
       </main>
       <footer className="mt-12 flex gap-8">
